@@ -1,13 +1,14 @@
 import React from 'react';
+import './style.css'
 
 function Search(props) {
-    const { q, handleInputChange } = props
+    const { handleInputChange } = props
     return(
-        <form>
-            <input
+        <form className="form">
+            <input 
+                className="search"
+                autoFocus
                 type="text"
-                name="q"
-                value={q}
                 onChange={handleInputChange}
                 placeholder="Filter by name"
             />
