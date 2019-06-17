@@ -31,9 +31,7 @@ class App extends Component {
     return (
       <div>
         <Header />
-        <Search 
-          handleInputChange={this.handleInputChange}
-        />
+        <Search handleInputChange={this.handleInputChange}/>
         <Reference items={this.state.data}/>
 
       </div>
